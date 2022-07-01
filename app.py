@@ -6,7 +6,12 @@ model = pickle.load(open('final_model.pkl','rb'))
 
 
 
-st.set_page_config(page_title="Healthy Heart App",page_icon="⚕️",layout="centered",initial_sidebar_state="expanded")
+st.set_page_config(
+    page_title="Prediction App",
+    page_icon="🤖",
+    layout="centered",
+    initial_sidebar_state="expanded",
+)
 
 from PIL import Image
 image = Image.open('banner.jpeg')
